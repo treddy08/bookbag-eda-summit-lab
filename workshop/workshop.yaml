@@ -3,7 +3,8 @@ name: Bookbag Template
 modules:
   activate:
     - overview
-    - exercise1
-    - exercise2
-    - exercise3
+    - lab1
+    - lab2
+    - lab3
+    - lab4
     - review
