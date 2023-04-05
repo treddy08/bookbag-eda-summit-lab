@@ -46,6 +46,7 @@ You can access your lab environment as {user} with password "{ssh_password}" wit
 ----
 
 Your lab GUID is "{guid}".
+Your console url is "{openshift_console_url}"
 
 An example var was set to %example_var%.
 
