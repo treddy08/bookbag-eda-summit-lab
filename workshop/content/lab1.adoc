@@ -2,13 +2,22 @@
 :user: %user%
 :markup-in-source: verbatim,attributes,quotes
 
-== Exercise 1
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nam quam arcu, accumsan eget ligula sed, aliquet vehicula felis.
-Aliquam aliquam pellentesque fringilla.
-Nam porttitor, orci vel cursus ultrices, diam dolor maximus metus, eget elementum felis ante vitae ex.
-Mauris ligula eros, venenatis eu tincidunt eu, pulvinar vitae lectus.
-Aliquam facilisis lectus viverra vestibulum ornare.
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-Etiam accumsan efficitur sapien.
+. Login to the OpenShift console using User1 credentials (login = user1 / password = openshift).
+On the OpenShift console under the Developer perspective, create a new project called user1-crdb-test.
++
+image::images/lab1_new_project.png[New Project,align="left"]
++
+. On the OpenShift console left-side menu, select +Add and the Import from Git tile. Fill the following Git fields:
+.. Git Repo URL = https://github.com/myeung18/spring-boot-dbaas-demo-apps
+.. Git reference = ocp-build
+.. Context dir = /postgresql-app
+. Use the default values for the other fields and Create the application.
++
+image::images/lab1_create_quarkus_app.png[Quarkus Application,align="left"]
++
+. Building the application pod will take approximately 30 seconds. Once the pod starts running, it will keep restarting till it finds a valid database connection.
++
+On the OpenShift console left-side menu, select +Add and the Cloud Hosted Databases tile. Choose CockroachDB tile and select the database instance that you want to use. You will see that a database connection instance has been added to the Topology view of your project.
++
+image::images/lab1_cloud_hosted_db.png[Cloud Hosted Database,align="left"]
++
