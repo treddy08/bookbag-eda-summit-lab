@@ -3,14 +3,17 @@ modules:
   overview:
     name: Overview
     exit_sign: Continue
-  exercise1:
-    name: Exercise 1
+  lab1:
+    name: Create Spring Boot application and connect to CockroachDB
     exit_sign: Continue
-  exercise2:
-    name: Exercise 2
+  lab2:
+    name: AMQ Stream Setup for Kafka Messaging
     exit_sign: Continue
-  exercise3:
-    name: Exercise 3
+  lab3:
+    name: Enabling Change Data Capture in CockroachDB
+    exit_sign: Continue
+  lab4:
+    name: Kafka Consumer Application
     exit_sign: Continue
   review:
     name: Review
