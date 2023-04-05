@@ -7,8 +7,6 @@
 :openshift_console_url: %openshift_console_url%
 :openshift_api_url: %openshift_api_url%
 
-== Overview
-
 As organizations modernize their applications and adopt a containerization strategy,  breaking down traditional monolithic applications into a set of unique microservices is the logical next step. With the decoupling of the traditional applications into a set of microservices, the importance of data exchange between the services is paramount. In this workshop you will learn how to deploy applications on OpenShift, deploy CockroachDB using Red Hat OpenShift Database Access and create an event driven architecture for reliable data exchange between microservices using OpenShift, CockroachDB and Kafka to create an outbox pattern.
 
 == What will you learn
