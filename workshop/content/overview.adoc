@@ -4,6 +4,8 @@
 :markup-in-source: verbatim,attributes,quotes
 :my_deep_var_underbars: %my_deep_var%
 :my_deep_var_dots: %my.deep.var%
+:openshift_console_url: %openshift_console_url%
+:openshift_api_url: %openshift_api_url%
 
 == Overview
 
@@ -16,6 +18,9 @@ As a side-effect of the `.`, any character will match the `.` in the variable na
 
 .Example: All of these function
 ----
+openshift_console_url: {openshift_console_url}
+openshift_api_url: {openshift_api_url}
+
 :my_deep_var_underbars: %my_deep_var%
 :my_deep_var_dots: %my.deep.var%
 
